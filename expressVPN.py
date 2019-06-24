@@ -80,7 +80,3 @@ def goodbye():
 
 if __name__ == "__main__":
     main()
-
-#output = subprocess.check_output("expressvpn status", shell=True)
-#if "Not" in output.decode("utf-8"):
-#    print("You are not connected.")
