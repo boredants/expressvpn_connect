@@ -14,7 +14,5 @@ def insults():
 
     soup = BeautifulSoup(html, 'lxml')
 
-    #soup.find_all('i')[0]
-
     for tag in soup.find_all('strong'):
         print(tag.text)
