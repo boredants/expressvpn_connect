@@ -65,12 +65,6 @@ def connect():
         #Connect
         subprocess.call(['expressvpn', 'connect', vpnChoice])
 
-        #Another way
-        #Build the connection string for the  final subprocess call
-        #args = 'expressvpn connect ' + vpnChoice
-        #Connect
-        #subprocess.call(args, shell=True)
-
 def disconnect():
     """The disconnect function"""
     output = subprocess.check_output("expressvpn status", shell=True)
@@ -90,7 +84,3 @@ def goodbye():
 
 if __name__ == "__main__":
     main()
-
-#output = subprocess.check_output("expressvpn status", shell=True)
-#if "Not" in output.decode("utf-8"):
-#    print("You are not connected.")
